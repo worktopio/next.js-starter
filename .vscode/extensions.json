@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "heybourn.headwind",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "zenclabs.previewjs",
+    "christian-kohler.path-intellisense",
+    "geriyoco.vscode-image-gallery",
+    "formulahendry.auto-rename-tag",
+    "kisstkondoros.vscode-gutter-preview",
+    "PKief.material-icon-theme",
+    "zhuangtongfa.Material-theme",
+    "aaron-bond.better-comments"
+  ]
+}

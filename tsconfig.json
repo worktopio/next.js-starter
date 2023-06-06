@@ -1,4 +1,10 @@
 {
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    },
+    "files": true
+  },
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -13,6 +19,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": ".",
     "incremental": true,
     "plugins": [
       {
