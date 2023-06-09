@@ -1,23 +1,19 @@
 module.exports = {
-  extends: ['next/core-web-vitals', 'prettier'],
-  plugins: ['unicorn'],
+  extends: ['eslint:recommended', 'next', 'plugin:@typescript-eslint/recommended', 'prettier'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'unicorn'],
   rules: {
-    'no-unused-vars': [
-      'error',
-      {
-        args: 'after-used',
-        caughtErrors: 'none',
-        ignoreRestSiblings: true,
-        vars: 'all'
-      }
-    ],
+    'no-unused-vars': 'off',
     'prefer-const': 'error',
     'react-hooks/exhaustive-deps': 'error',
+    'react/no-unescaped-entities': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
     'unicorn/filename-case': [
       'error',
       {
         case: 'kebabCase'
       }
     ]
-  }
+  },
+  root: true
 };
