@@ -12,6 +12,7 @@
     "start": "next start",
     "lint": "next lint",
     "lint-staged": "lint-staged",
+    "typecheck": "tsc --noEmit --incremental false",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown ."
   },
