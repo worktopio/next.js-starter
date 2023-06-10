@@ -4,9 +4,10 @@ module.exports = {
   trailingComma: 'none',
   printWidth: 100,
   tabWidth: 2,
-  // pnpm doesn't support plugin autoloading
-  // https://github.com/tailwindlabs/prettier-plugin-tailwindcss#installation
-  plugins: [require('prettier-plugin-tailwindcss')],
+  plugins: [
+    require('prettier-plugin-tailwindcss'),
+    require('@trivago/prettier-plugin-sort-imports')
+  ],
   importOrder: ['^next/(.*)$', '^lib/(.*)$', '^components/(.*)$', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true
