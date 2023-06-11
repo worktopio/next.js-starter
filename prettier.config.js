@@ -5,10 +5,11 @@ module.exports = {
   printWidth: 100,
   tabWidth: 2,
   plugins: [
-    require('prettier-plugin-tailwindcss'),
-    require('@trivago/prettier-plugin-sort-imports')
+    require('@trivago/prettier-plugin-sort-imports'),
+    require('prettier-plugin-tailwindcss')
   ],
   importOrder: ['^next/(.*)$', '^lib/(.*)$', '^components/(.*)$', '^[./]'],
   importOrderSeparation: true,
-  importOrderSortSpecifiers: true
+  importOrderSortSpecifiers: true,
+  tailwindFunctions: ['cn']
 };
