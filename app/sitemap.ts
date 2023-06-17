@@ -5,7 +5,7 @@ import { MetadataRoute } from 'next';
 import { absoluteUrl } from 'lib/utils';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const data = await getPages({ page: 1, limit: 1000 });
+  const data = await getPages();
 
   return data.pages.map((page) => ({
     url: `${absoluteUrl('')}${page.href}`,
