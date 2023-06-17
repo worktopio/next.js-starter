@@ -1,5 +1,3 @@
-import '@worktopio/sitemap/lib/types';
-
 export const metadata: Metadata = {
   title: 'Home',
   datePublished: '1/1/2023',
